@@ -61,7 +61,7 @@ function renderCountryInfo(countryGetInfo) {
 
             // about country
     function AddCountryFullInfo(countryGetInfo) {
-        return refs.countryInfo.insertAdjacentHTML("beforeend", `<div class="flag-country-block">
+        return general.countryInfo.insertAdjacentHTML("beforeend", `<div class="flag-country-block">
         <img
           class="flag"
           src="${flags.svg}"

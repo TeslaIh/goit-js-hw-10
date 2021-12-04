@@ -16,8 +16,8 @@ export default class RestCountriesAPI {
             .then((response) => {
                 if (!response.ok) {
                     Notiflix.Notify.failure("Oops, there is no country with that name");
-                    refs.countryInfo.innerHTML = '';
-                    refs.countryList.innerHTML = '';
+                    general.countryInfo.innerHTML = '';
+                    general.countryList.innerHTML = '';
                     throw new Error(response.status);
                 }
                 return response.json();
