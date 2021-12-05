@@ -54,7 +54,7 @@ function renderCountryInfo(countryGetInfo) {
                 return AddCountryFullInfo(countryGetInfo);
             };
 
-            if (countryGetInfo.length > 10) {
+            if (countryGetInfo.length >= 10) {
                 general.countryInfo.innerHTML = '';
                 general.countryList.innerHTML = '';
             }
